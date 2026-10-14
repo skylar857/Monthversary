@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For my Madhu kuttyyy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #050505; 
+            color: #f0f0f0;
+            font-family: 'Cormorant Garamond', serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        #bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('assets/bg.jpeg');
+            background-size: contain; /* Shrinks picture so the borders fit */
+            background-position: center center; /* Keeps you centered */
+            background-repeat: no-repeat; /* Prevents tiling */
+            opacity: 0;
+            z-index: 1; 
+            transition: opacity 4s ease-in-out; 
+        }
+
+        #bg-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.75);
+            opacity: 0;
+            z-index: 2; 
+            transition: opacity 4s ease-in-out;
+        }
+
+        #landing {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            background-color: #050505;
+            transition: opacity 2s ease-in-out;
+        }
+
+        .enter-btn {
+            background: none;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #f0f0f0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+            letter-spacing: 1px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .enter-btn:hover {
+            border-color: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        }
+
+        #letter-container {
+            display: none; 
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10vh 20px 30vh 20px; 
+            position: relative; 
+            z-index: 3;
+            transition: opacity 3s ease-in-out; 
+        }
+
+        .paragraph {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 3s ease-in-out, transform 3s ease-in-out;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+        }
+
+        .paragraph.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="assets/rathinamo.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="bg-image"></div>
+    <div id="bg-overlay"></div>
+
+    <div id="landing">
+        <button class="enter-btn" onclick="startExperience()">
+            To the girl who changed my world on September 15th... <br><br>
+            <span style="font-size: 1.1rem; font-style: italic; opacity: 0.8;">Click to step into our world, Kanmani</span>
+        </button>
+    </div>
+
+    <div id="letter-container">
+        <div class="paragraph">Myy kanmaniiii,</div>
+
+        <div class="paragraph">It’s completely still tonight, and as October 14 gently fades into the 15th, I find myself thinking about exactly where I was one month ago. September 15 wasn’t just the day I proposed to youuu it was the day the universe gently shifted, aligning my world with yours. It’s only been one month, yet it feels as though my soul has known you for a lifetime. I don't just look at you as someone I want for the beautiful, exciting beginning of a romance. I look at you and see the quiet, steadfast peace of our future.</div>
+
+        <div class="paragraph">When you told me recently that you are getting deeply connected to me, that you are falling more in love by the minute and willing to go even deeper, my heart completely melted , those words are everything to me because i don't merely want you to love me today, Madhuuu maaa , i want you to feel overwhelmingly safe, cherished, and respected every single day that follows. You have seamlessly become a part of the way I experience my everyday life. Remember those two days at college when we didn’t see each other? I missed you terribly , i realized then that i don’t just miss the big, exciting moments with you i miss the ordinary, beautiful possibility of just seeing you, hearing your laugh, or knowing you are somewhere nearby.</div>
+
+        <div class="paragraph">It’s the little things that have made this month so incredibly magical. It’s those late night conversations that stretch to 3 or 4 AM, where hours vanish into thin air, and we effortlessly drift from silly Batman jokes and our endless "yep, yepp, yeppp" spelling games to the deepest, most vulnerable corners of our hearts. It’s the ₹30 you sent me for pani puri a gesture so small, yet it carried so much warmth and care that i tucked it away as a core memory. It’s the way we share songs, the way an Ilaiyaraaja melody or the magic of Rathinamo suddenly feels like it was written just for us. That’s why I loved creating that little website for you, with the falling rain, the Van Gogh sky, and the cup of tea. I just wanted to build a tiny, cozy world that was entirely yours, a reflection of how beautiful you make my real world feel.</div>
+
+        <div class="paragraph">But loving you also means learning you, and i want to do that beautifully. I know there have been moments when i haven't completely understood what you were trying to say, moments you felt exhausted having to explain your mind to me over and over. I am sooo sorry for making you feel that way, azhagiiii.I don't just love the parts of you that belong to me.. I love the whole, independent, brilliant ponnuuu you are. I'll to be a partner who listens to the quiet meanings behind your words and i promise i'll be that man for youuu forever pattuuu</div>
+
+        <div class="paragraph">Thangameyy, when I close my eyes, I dream of a life that stretches far beyond these college days. I dream of the day i'll stand beside you, look into your eyes, and realize the girl I asked out on a september evening is now the woman I get to call my wife. I imagine building a warm, peaceful home with you, waking up beside you on sleepy mornings, teasing each other, making up after our silly disagreements, and finding profound joy in ordinary Tuesdays. I can already picture our long drives, your head resting on my shoulder while a 90s ARR playlist fills the car, watching sunsets fade into starlight. I want to travel this world with you, collect photographs and memories, sit down with our children and tell them the beautiful story of how their parent's love began. I want to grow old with you, Madhuu maa. I want to reach a day where our hair is grey, our jokes are deeply familiar, and yet, my hand still instinctively reaches for yours.</div>
+
+        <div class="paragraph">September 15 was just the opening chord of a song I want to listen to for the rest of my life. Thank you for this beautiful first month, chellameyy. I don't just want to fall in love with you...</div>
+
+        <div class="paragraph">I want to keep choosing you, learning you, and cherishing you through every single season of the life that awaits us.</div>
+
+        <div class="paragraph">I will love you until the very last sunset we share, and if there is anything after that, my soul will look for yours there, too. Happy one month, myy loveee.</div>
+        
+        <!-- The Final Reveal Button -->
+        <div class="paragraph" style="text-align: center; margin-top: 50px;">
+            <button class="enter-btn" style="font-size: 1.1rem; padding: 10px 25px;" onclick="clearScreen()">
+                Look at us
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function startExperience() {
+            const music = document.getElementById('bg-music');
+            music.play();
+
+            const landing = document.getElementById('landing');
+            landing.style.opacity = '0';
+            
+            setTimeout(() => {
+                landing.style.display = 'none';
+                
+                document.getElementById('letter-container').style.display = 'block';
+                document.getElementById('bg-image').style.opacity = '1';
+                document.getElementById('bg-overlay').style.opacity = '1';
+
+                startParagraphFades();
+            }, 2000); 
+        }
+
+        function startParagraphFades() {
+            const paragraphs = document.querySelectorAll('.paragraph');
+            
+            let delay = 2000; 
+            
+            const timings = [
+                6000,   
+                24000,  
+                28000,  
+                28000,  
+                24000,  
+                30000,  
+                10000,  
+                10000,
+                8000    
+            ];
+
+            paragraphs.forEach((p, index) => {
+                setTimeout(() => {
+                    p.classList.add('visible');
+                    p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }, delay);
+                
+                if (index < timings.length) {
+                    delay += timings[index];
+                }
+            });
+        }
+
+        function clearScreen() {
+            document.getElementById('letter-container').style.opacity = '0';
+            document.getElementById('bg-overlay').style.opacity = '0';
+            
+            setTimeout(() => {
+                document.getElementById('letter-container').style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
